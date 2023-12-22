@@ -1,0 +1,28 @@
+{
+  "language": "typescript",
+  "app": "npx ts-node main.ts",
+  "projectId": "343e05dd-2e1c-419b-baaa-5f1279bf7d70",
+  "sendCrashReports": "false",
+  "terraformProviders": [
+    "hashicorp/aws@~> 5.31", "kreuzwerker/docker", "hashicorp/time"
+  ],
+  "terraformModules": [
+    {
+      "name": "vpc",
+      "source": "terraform-aws-modules/vpc/aws"
+    },
+    {
+      "name": "ecs",
+      "source": "terraform-aws-modules/ecs/aws"
+    },
+    {
+      "name": "autoscaling",
+      "source": "terraform-aws-modules/autoscaling/aws"
+    },
+    {
+      "name": "rds-aurora",
+      "source": "terraform-aws-modules/rds-aurora/aws"
+    }
+  ],
+  "context": {}
+}
