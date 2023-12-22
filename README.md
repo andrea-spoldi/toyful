@@ -7,6 +7,10 @@ This project is named Toyful and is licensed under MPL-2.0.
 
 This project is a CDKTF project that uses constructs to manage AWS resources.
 
+## Requirements
+
+Terraform > 0.12.x 
+
 ## Installation
 
 To install the project, run the following command:
